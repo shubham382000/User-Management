@@ -1,38 +1,198 @@
-.App {
-  text-align: center;
+.landing-page {
+    background: white url(./Assets/Image-Home.avif);
+    background-size: cover;
+    height: 100vh;
+    color: #f7faff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Buttons gradient and colors */
+
+.btn-grad {
+    background-image: linear-gradient(to right, #00bf8f 0%, #001510 51%, #00bf8f 100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+
+.btn-grad2 {
+    background-image: linear-gradient(to right, #cb2d3e 0%, #ef473a 51%, #cb2d3e 100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-grad2:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.cards {
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(14, 174, 87, 1) 0%, rgba(12, 116, 117, 1) 90%);
+}
+
+.btn-grad3 {
+    background-image: linear-gradient(to right, #5A3F37 0%, #2C7744 51%, #5A3F37 100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-grad3:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.icons {
+    color: #74EBD5;
+}
+
+/* Modal */
+
+.modal-dialog{
+    margin: 0;
+    width: 400px;
+}
+
+@media (max-width : 450px){
+    .modal-dialog{
+        width: 82px;
+    }
+}
+
+.modal-content {
+    border-radius: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color:#0c201b !important ;
+}
+.modal-header .btn-close{
+   background: transparent;
+   opacity: 1;
+}
+.modal-header i{
+    color: white;
+    font-size: 1.3rem;
+}
+
+.modal-body{
+        width: 90%;
+        margin: 0 auto;
+        padding: 75px 0 0 ;
+        flex: unset;
+}
+
+.modal-body .modal-line{
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1px 0;
+    margin-bottom: 50px;
+    cursor: pointer;
+    color: #74EBD5;
+    transition: all 0.5 ease;
+    border-bottom: 1px solid lightgray;
+}
+.modal-body .modal-line:hover{
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+/* Home responsive */
+
+@media (max-width : 415px){
+    .mobHome h5{
+        text-align: left;
+        font-weight: 500;
+        font-size: 3rem;
+        padding-left: 2rem;
+    }
+    .mobHome h5 span{
+        font-size: 2rem;
+        font-weight: 500;
+        letter-spacing: 0.1rem;
+    }
+    .mobHome h5 i{
+        margin : 0 0.5rem;
+    }
+    .mobHome p{
+        text-align: left;
+        font-weight: 250;
+        font-size: 1rem;
+        padding: 2rem;
+        
+    }
+}
+
+/* Users Responsive */
+
+@media (max-width : 415px){
+    .userlist .h3{
+        font-size: 1.4rem;
+    }
+    .userlist .para{
+        font-size: 1rem;
+    }
+    
+}
+
+/* Admin responsive */
+
+@media (max-width : 415px){
+   .adminn .h3{
+      font-size: 1.4rem;
+   }
+   .adminn .para{
+      font-size: 1rem;
+   } 
+   .create .h3{
+     font-size: 1.4rem;
+   } 
+   .create .para{
+    font-size:  1rem;
+   }
+   .update .h3{
+    font-size: 1.4rem;
+   }
+   .update .para{
+    font-size:  1rem;
+   }
 }
